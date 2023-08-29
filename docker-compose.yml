@@ -8,8 +8,6 @@ services:
       - 443:443
     environment:
       - CADDY_INGRESS_NETWORKS=caddy
-    labels:
-      caddy.servers.protocol.experimental_http3: ""
     networks:
       - caddy
     volumes:
